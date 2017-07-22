@@ -1,0 +1,15 @@
+{
+  "name": "todoapp",
+  "version": "1.0.0",
+  "description": "For Advanced Exercise on Computer and Information Science 1B",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Group 10 (Hiroki Ishihara, Hikoyuki Araki, Hayato Ishida, Shinya Ohata, Yoshinori Ono, Ryota Makabe)",
+  "license": "ISC"
+}

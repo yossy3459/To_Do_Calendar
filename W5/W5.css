@@ -1,0 +1,140 @@
+/*******************************************************************
+*** File Name           : W5.css
+*** Designer            : 小野 義基
+*** Date                : 2017.07.01
+*** Function            : M5 カレンダー表示主処理
+*******************************************************************/
+
+body {
+	margin: 10px 15px;
+	padding: 0;
+	font-family: Arial,"メイリオ","Lucida Grande",Helvetica,Verdana,sans-serif;
+	background-color: #5fa137;
+}
+
+h1{
+	font-size: 24px;
+	text-align: center;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+#css-calendar {
+	max-width: 650px;
+	padding: 10px;
+	margin-right: 5px;
+	margin-left: 5px;
+	float: left;
+	background-color: white;
+}
+
+#property{
+	font-size: 12px;
+	width: 340px;
+	height: 535px;
+	padding: 10px;
+	margin-right: 5px;
+	margin-left: 5px;
+	float: right;
+	background-color: white;
+	table-layout:fixed;
+	overflow: scroll;
+}
+
+#property::-webkit-scrollbar {
+	display: none;
+}
+
+#back{
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+.button {
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 50px;
+	outline: none;
+	background-color: darkorange;
+	color: white;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.button::before,
+.button::after {
+	position: absolute;
+	z-index: -1;
+	display: block;
+	content: '';
+}
+
+.button,
+.button::before,
+.button::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+.button:hover {
+	background-color: #ff6600;
+	color: white;
+	text-decoration: none;
+}
+
+th.date{
+	text-align: center;
+	font-size: 16px;
+}
+
+th.property{
+	text-align: center;
+	font-size: 14px;
+}
+
+td.tag{
+	width: 5px;
+	border-top: none;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+td.text{
+	border-top-color: #ddd;
+}
+
+td.propertyRowInit1{
+	font-size: 14px;
+	width: 50px;
+
+}td.propertyRowInit2{
+	font-size: 14px;
+	width: 50px;
+}
+
+
+td.propertyRow1{
+	font-size: 14px;
+	padding-left: 4px;
+}
+
+td.propertyRow2{
+	font-size: 14px;
+	width: 50px;
+	padding-left: 4px;
+}
+
+td.propertyRow3{
+	font-size: 14px;
+	width: 250px;
+	padding-left: 0px;
+}
